@@ -23,6 +23,7 @@
 
 const cardCont = document.querySelector(".cards-container");
 
+/// MVP
 axios
   .get("https://lambda-times-api.herokuapp.com/articles")
   .then((incomData) => {
@@ -44,6 +45,35 @@ axios
   .catch((err) => {
     console.log("Error", err);
   });
+
+/// STRETCH
+
+// axios
+//   .get("https://lambda-times-api.herokuapp.com/articles")
+//   .then((incomData) => {
+//     const newData = incomData.data.articles;
+//     // console.log(newData);
+
+//     let tempArr = [];
+//     for (const item in newData) {
+//       tempArr.push(item);
+//     }
+
+//     tempArr.forEach((item) => {
+//       newData[item].forEach((arrItem) => {
+//         cardCont.appendChild(
+//           CardMaker({
+//             incHeadline: arrItem.headline,
+//             incAuthor: arrItem.authorName,
+//             incIMG: arrItem.authorPhoto,
+//           })
+//         );
+//       });
+//     });
+//   })
+//   .catch((err) => {
+//     console.log("Error", err);
+//   });
 
 function CardMaker({ incHeadline, incAuthor, incIMG }) {
   const card = document.createElement("div");
