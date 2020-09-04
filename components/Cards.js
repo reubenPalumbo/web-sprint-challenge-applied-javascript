@@ -29,13 +29,8 @@ axios
     const newData = incomData.data.articles;
     console.log(newData);
 
-    let tempArr = [];
     for (const item in newData) {
-      tempArr.push(item);
-    }
-    console.log(tempArr);
-    tempArr.forEach((itemArr) => {
-      newData[itemArr].forEach((arrItem) => {
+      newData[item].forEach((arrItem) => {
         cardCont.appendChild(
           CardMaker({
             incHeadline: arrItem.headline,
@@ -44,7 +39,7 @@ axios
           })
         );
       });
-    });
+    }
   })
   .catch((err) => {
     console.log("Error", err);
