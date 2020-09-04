@@ -28,14 +28,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
-
+   The Document Object Model is the way the HTML is able to be accessed and changed.
 2. What is an event?
-
+   When something happens to something on the DOM.
 3. What is an event listener?
-
+   Code waiting to be run when an event happens. EX: click on an image
 4. Why would we convert a NodeList into an Array?
-
+   So that it can be looped throught with a forLoop or forEach()
 5. What is a component?
+   A block in a of HTML that can be pasted where you need it. A function that creates this and places it to the exsisting HTML.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -65,9 +66,9 @@ Your finished project must include all of the following requirements:
 
 - [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
 
-- [ ] Following the instructions in the `components/Header.js` file, create the Header.
+- [x] Following the instructions in the `components/Header.js` file, create the Header.
 
-- [ ] Following the instructions in the `components/Tabs.js` file, create the Tabs.
+- [x] Following the instructions in the `components/Tabs.js` file, create the Tabs.
 
 - [ ] Following the instructions in the `components/Cards.js` file, create the Cards.
 
